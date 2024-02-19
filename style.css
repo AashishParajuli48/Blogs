@@ -1,3 +1,4 @@
+/* Reset and General Styling */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,6 +6,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styling */
 header {
     position: relative;
 }
@@ -62,6 +64,7 @@ header {
     transform-origin: bottom left;
 }
 
+/* Background Image Styling */
 .background-image {
     position: relative;
     overflow: hidden;
@@ -79,119 +82,78 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    padding: 20px; /* Add padding to provide space around content */
 }
 
 .overlay h1 {
     font-size: 2em;
     color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color with opacity */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    background-color: rgb(0, 0, 0);
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
-    line-height: 1.6;
-}
-
-header {
-    position: relative;
-}
-
-.navbar {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.logo img {
-    width: 80px;
-    height: auto;
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links a {
-    color: #000;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav-links a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-in-out;
-}
-
-.nav-links a:hover {
-    color: #333;
-}
-
-.nav-links a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.background-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.background-image img {
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-.overlay h1 {
-    font-size: 2em;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    background-color: #292929;
-    padding: 5px 10px; /* Adjusted padding */
+    padding: 10px 20px; /* Adjusted padding */
     display: inline-block; /* Ensures the background only wraps around the text */
 }
 
 .overlay h3 {
     font-size: 1.5em;
     color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color with opacity */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    background-color: #292929;
-    padding: 5px 10px; /* Adjusted padding */
+    padding: 10px 20px; /* Adjusted padding */
     display: inline-block; /* Ensures the background only wraps around the text */
 }
 
+.overlay p {
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color with opacity */
+}
+
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none; /* Removed duplicate */
+}
+
+.feature h2 {
+    color: #000;
+}
+
+.feature p {
+    color: #333; /* Adjusted paragraph color */
+}
+
+.feature a {
+    color: inherit; /* Inherit the color from the parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.feature:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Button Styling */
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -202,87 +164,11 @@ header {
     margin-top: 20px;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.cta-button:hover {
+    background-color: #001f4d;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    text-align: center;
-    max-width: 300px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.feature h2 {
-    color: #000;
-}
-
-.footer {
-    background-color: #003366;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.intro-section {
-    position: relative;
-    height: 400px; /* Adjust the height as needed */
-    background-image: url('images/index.jpg'); /* Add the path to your background image */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.intro-content h2,
-.intro-content p {
-    color: #fff;
-}
-
-
-.rounded-photo {
-    border-radius: 50%;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    text-align: center;
-    max-width: 300px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.feature h2 {
-    color: #000;
-}
-
+/* Footer Styling */
 .footer {
     background-color: #292929;
     color: #fff;
@@ -290,6 +176,7 @@ main {
     text-align: center;
 }
 
+/* Introduction Section Styling */
 .intro-section {
     position: relative;
     height: 400px; /* Adjust the height as needed */
@@ -309,7 +196,6 @@ main {
     color: #fff;
 }
 
-
 .rounded-photo {
     border-radius: 50%;
     overflow: hidden; /* Ensures the image is fully within the rounded border */
@@ -317,10 +203,4 @@ main {
     width: 150px; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
     margin: 0 auto; /* Center the photo within the container */
-}
-
-.ceo-info img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover;
 }
