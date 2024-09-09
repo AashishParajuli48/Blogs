@@ -152,6 +152,50 @@ main {
     background-color: #f0f0f0;
 }
 
+/* Blog Section Styling */
+#blogs {
+    text-align: left;
+    padding: 20px;
+}
+
+#blogs h2 {
+    color: #003366; /* Consistent Deep Midnight Blue for headings */
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+#blogs p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333; /* Darker color for paragraphs */
+    line-height: 1.8;
+}
+
+/* Additional Styling for Quotes or Highlighted Text */
+#blogs p.highlight {
+    background-color: #f9f9f9;
+    border-left: 4px solid #003366;
+    padding: 10px 20px;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Links inside the blog */
+#blogs a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blogs a:hover {
+    text-decoration: underline;
+}
+
 
 /* Button Styling */
 .cta-button {
@@ -203,4 +247,24 @@ main {
     width: 150px; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
     margin: 0 auto; /* Center the photo within the container */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #blogs h2 {
+        font-size: 1.5em;
+    }
+
+    #blogs p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
